@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:mds_little_bit/page/random_cat_page.dart';
 import 'package:mds_little_bit/widget/a_button.dart';

@@ -3,7 +3,7 @@ class MeowModel {
 
   MeowModel(this.file);
 
-  MeowModel.fromJSON(Map<String, String> json) {
+  MeowModel.fromJSON(Map<String, dynamic> json) {
     this.file = json['file'];
   }
 }
