@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class AButton extends StatefulWidget {
   final String title;
+  final Function callback;
 
-  AButton(this.title);
+  AButton(this.title, this.callback);
 
   @override
   _AButtonState createState() => _AButtonState();
@@ -38,6 +39,8 @@ class _AButtonState extends State<AButton> {
           setState(() {
             _color = Colors.lightGreen.withOpacity(1);
           });
+
+          widget.callback();
         },
         onTapCancel: () {
           setState(() {

@@ -11,7 +11,15 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            AButton("Random Cat"),
+            AButton("Async/Awaits", () {
+              print("Async/Awaits");
+            }),
+            AButton("CacheManager", () {
+              print("CacheManager");
+            }),
+            AButton("Random Cat", () {
+              print("'miaou'");
+            }),
           ],
         ),
       ),
