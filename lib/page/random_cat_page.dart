@@ -32,11 +32,7 @@ class _RandomCatPageState extends State<RandomCatPage> {
           ),
         ],
       ),
-      body: Row(
-        children: [
-          _buildContent(),
-        ],
-      ),
+      body: _buildContent(),
     );
   }
 
