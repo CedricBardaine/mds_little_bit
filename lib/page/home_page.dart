@@ -1,4 +1,7 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:mds_little_bit/page/random_cat_page.dart';
 import 'package:mds_little_bit/widget/a_button.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,9 +20,18 @@ class HomePage extends StatelessWidget {
             AButton("CacheManager", () {
               print("CacheManager");
             }),
-            AButton("Random Cat", () {
-              print("'miaou'");
-            }),
+            AButton(
+              "Random Cat",
+              () {
+                print("'miaou'");
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (ctx) {
+                    return RandomCatPage();
+                  }),
+                );
+              },
+            ),
           ],
         ),
       ),
